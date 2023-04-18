@@ -47,7 +47,8 @@ class RedditImageAdapter(
 private class RedditImageDiffCallback : DiffUtil.ItemCallback<RedditImage>() {
 
     override fun areItemsTheSame(oldItem: RedditImage, newItem: RedditImage): Boolean {
-        return oldItem.id == newItem.id
+        return oldItem.url == newItem.url 
+        //oldItem.id == newItem.id
     }
 
     override fun areContentsTheSame(oldItem: RedditImage, newItem: RedditImage): Boolean {
