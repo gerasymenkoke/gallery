@@ -11,7 +11,8 @@ import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-private const val BASE_URL = "https://www.reddit.com/"
+private const val BASE_URL = "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftechcrunch.com%2F2022%2F11%2F17%2Fgoogle-new-features-across-maps-search-shopping%2F&psig=AOvVaw34p7gdAfPFEeRtDhHX5SeR&ust=1681894494789000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPjg5eP6sv4CFQAAAAAdAAAAABAJ"
+    // "https://www.reddit.com/"
 
 val networkModule = module {
 
