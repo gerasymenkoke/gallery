@@ -11,9 +11,10 @@ import kotlinx.android.parcel.Parcelize
 @Entity(tableName = "images")
 @Parcelize
 data class RedditImage(
-    @PrimaryKey val id: String,
-    val title: String,
-    val subreddit: String,
+    @PrimaryKey 
+    //val id: String,
+    //val title: String,
+    //val subreddit: String,
     val url: String
 ) : Parcelable
 
