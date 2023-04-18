@@ -25,6 +25,6 @@ interface RedditImageDao {
     @Delete
     suspend fun deleteImage(vararg images: RedditImage)
 
-    @Query("SELECT EXISTS(SELECT 1 FROM images WHERE id = :id LIMIT 1)")
-    fun isImageExists(id: String): LiveData<Boolean>
+  //  @Query("SELECT EXISTS(SELECT 1 FROM images WHERE id = :id LIMIT 1)")
+ //   fun isImageExists(id: String): LiveData<Boolean>
 }
