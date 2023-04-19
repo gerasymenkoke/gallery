@@ -21,7 +21,7 @@ class ImageInfoViewModel(
     /**
      * Check if [image] is in the favorites.
      */
-    val isFavorite: LiveData<Boolean> = repository.isFavorite(image.id)
+   // val isFavorite: LiveData<Boolean> = repository.isFavorite(image.id)
 
     /**
      * Save [image] to favorites.
