@@ -46,8 +46,8 @@ class ImageInfoDialogFragment : BottomSheetDialogFragment() {
         val image = imageInfoViewModel.image
 
         with(binding) {
-            imageSubreddit.text = getString(R.string.subreddit_name_prefixed, image.subreddit)
-            imageTitle.text = image.title
+          //  imageSubreddit.text = getString(R.string.subreddit_name_prefixed, image.subreddit)
+          //  imageTitle.text = image.title
         }
     }
 
