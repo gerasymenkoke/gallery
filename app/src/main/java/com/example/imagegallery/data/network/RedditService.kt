@@ -12,6 +12,5 @@ interface RedditService {
     @GET("r/{subreddit}/top.json?raw_json=1")
     suspend fun getTopPosts(
         @Path("subreddit") subreddit: String
-        subreddit="photos"
-    ): RedditResponse
+        ): RedditResponse
 }
