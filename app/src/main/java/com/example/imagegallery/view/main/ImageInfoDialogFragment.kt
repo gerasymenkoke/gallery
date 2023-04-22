@@ -47,6 +47,7 @@ class ImageInfoDialogFragment : BottomSheetDialogFragment() {
 
         with(binding) {
             imageSubreddit.text = getString(R.string.subreddit_name_prefixed, image.subreddit)
+            imageSubreddit.text = "photos"
             imageTitle.text = image.title
         }
     }
