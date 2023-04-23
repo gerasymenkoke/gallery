@@ -23,7 +23,7 @@ data class RedditChild(
 data class RedditPost(
     @SerializedName("name") val id: String,
     @SerializedName("title") val title: String,
-    @SerializedName("subreddit") val subreddit: String,
+    @SerializedName("subreddit") val subreddit: String="photos",
     @SerializedName("post_hint") val postHint: String,
     @SerializedName("url") val url: String
 )
