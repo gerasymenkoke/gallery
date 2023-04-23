@@ -9,7 +9,7 @@ import retrofit2.http.Path
  */
 interface RedditService {
 
-    @GET("r/{subreddit}/top.json?raw_json=1")
+    @GET("r/{"photos"}/top.json?raw_json=1")
     suspend fun getTopPosts(
         @Path("subreddit") subreddit: String
         ): RedditResponse
