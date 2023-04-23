@@ -13,7 +13,7 @@ import kotlinx.android.parcel.Parcelize
 data class RedditImage(
     @PrimaryKey val id: String,
     val title: String,
-    val subreddit: String,
+    val subreddit: String?,
     val url: String
 ) : Parcelable
 
