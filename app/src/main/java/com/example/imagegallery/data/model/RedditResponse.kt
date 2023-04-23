@@ -27,7 +27,7 @@ data class RedditPost(
     @SerializedName("post_hint") val postHint: String,
     @SerializedName("url") val url: String
 )
- {
-    val color
-    get() = subreddit ?: "photos"
-}
+ //{
+ //   val color
+ //   get() = subreddit ?: "photos"
+ // }
