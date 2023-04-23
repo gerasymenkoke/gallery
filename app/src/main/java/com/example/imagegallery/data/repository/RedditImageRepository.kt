@@ -55,7 +55,7 @@ class RedditImageRepository(
     fun getTopImages(subreddit: String): Flow<Result<RedditImages>> = flow {
         // Emit loading result
         emit(Result.loading())
-        subreddit="photos"
+        // my - subreddit="photos"
         // Call remote source and get list of images
         val images = remote.getTopImages(subreddit)
 
