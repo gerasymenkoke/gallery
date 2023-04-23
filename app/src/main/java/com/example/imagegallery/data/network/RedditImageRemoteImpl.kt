@@ -16,7 +16,7 @@ class RedditImageRemoteImpl(
     /**
      * Fetch a list of top [RedditImage] from a [subreddit].
      */
-    override suspend fun getTopImages(subreddit: String?) = withContext(dispatchers.default) {
+    override suspend fun getTopImages(subreddit: String) = withContext(dispatchers.default) {
         val response = service.getTopPosts(subreddit)
         val children = response.data.children
 
