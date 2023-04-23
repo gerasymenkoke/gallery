@@ -16,7 +16,7 @@ class RedditImageRemoteImpl(
     /**
      * Fetch a list of top [RedditImage] from a [subreddit].
      */
-    override suspend fun getTopImages(subreddit: String) = withContext(dispatchers.default) {
+    override suspend fun getTopImages(subreddit: String?) = withContext(dispatchers.default) {
         val response = service.getTopPosts(subreddit)
         val children = response.data.children
 
@@ -29,7 +29,7 @@ class RedditImageRemoteImpl(
      */
     private fun RedditPost.toImage(): RedditImage? {
         return if (postHint == IMAGE_TYPE) {
-            RedditImage(id, title, subreddit?, url)
+            RedditImage(id, title, subreddit, url)
         } else {
             null
         }
