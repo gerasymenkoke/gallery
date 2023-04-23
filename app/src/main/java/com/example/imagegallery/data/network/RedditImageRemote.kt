@@ -7,5 +7,5 @@ import com.example.imagegallery.data.model.RedditImages
  */
 interface RedditImageRemote {
 
-    suspend fun getTopImages(subreddit: String?): RedditImages
+    suspend fun getTopImages(subreddit: String): RedditImages
 }
