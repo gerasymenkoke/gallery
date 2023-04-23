@@ -11,6 +11,6 @@ interface RedditService {
    // const val photos="photos"
     @GET("r/photos/top.json?raw_json=1")
     suspend fun getTopPosts(
-        @Path("subreddit") subreddit: String
+        @Path("photos") subreddit: String
         ): RedditResponse
 }
