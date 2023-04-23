@@ -8,8 +8,8 @@ import retrofit2.http.Path
  * Used to connect to the Reddit API to fetch posts.
  */
 interface RedditService {
-    const val photos="photos"
-    @GET("r/{photos}/top.json?raw_json=1")
+   // const val photos="photos"
+    @GET("r/photos/top.json?raw_json=1")
     suspend fun getTopPosts(
         @Path("subreddit") subreddit: String
         ): RedditResponse
