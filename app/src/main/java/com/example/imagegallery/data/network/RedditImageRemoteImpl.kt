@@ -29,7 +29,8 @@ class RedditImageRemoteImpl(
      */
     private fun RedditPost.toImage(): RedditImage? {
         return if (postHint == IMAGE_TYPE) {
-            RedditImage(id, title, subreddit, url)
+            RedditImage(id, title, subreddit, "https://www.dreamstime.com/")
+                        //url)
         } else {
             null
         }
