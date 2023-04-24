@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Gallerit</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_description_image">Image</string>
+    <string name="content_description_no_data">No data</string>
+
+    <!-- HomeViewPagerFragment values -->
+    <string name="images">Images</string>
+    <string name="my_collection">My Collection</string>
+
+    <!-- ImageListFragment values -->
+    <string name="search">Search</string>
+    <string name="subreddit">Subreddit…</string>
+    <string name="no_image_show">No image to show!</string>
+    <string name="no_internet">No internet connection!</string>
+
+    <!-- CollectionFragment values -->
+    <string name="no_image_saved">No image saved!</string>
+
+    <!-- ImageInfoDialogFragment values -->
+    <string name="subreddit_name_prefixed">r/%1$s</string>
+    <string name="save">Save</string>
+    <string name="remove">Remove</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+</resources>
